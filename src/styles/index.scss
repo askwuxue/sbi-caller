@@ -1,0 +1,7 @@
+// scss中_开头的文件不能编译，如果想要在模块中引入，需要去除文件名前的_
+// scss中的@import和css中的import不一样，不会发起请求
+// config
+@import "variables";
+
+// layout
+@import "reboot";
