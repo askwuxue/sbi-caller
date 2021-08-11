@@ -9,9 +9,15 @@
   vertical-align: center;
   background-image: none;
   border: $btn-border-width solid transparent;
-  padding: $btn-padding-y $btn-padding-x;
-  font-size: $btn-font-size;
-  border-radius: $btn-border-radius;
+  // padding: $btn-padding-y $btn-padding-x;
+  // font-size: $btn-font-size;
+  // border-radius: $btn-border-radius;
+  @include button-size(
+    $btn-padding-y,
+    $btn-padding-x,
+    $btn-font-size,
+    $btn-border-radius
+  );
   box-shadow: $btn-box-shadow;
   cursor: pointer;
   transition: $btn-transition;
